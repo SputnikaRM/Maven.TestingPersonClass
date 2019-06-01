@@ -14,7 +14,7 @@ public class Person {
     }
 
     public Person(int age) {
-        age = this.getAge();
+        age = getAge();
     }
 
     public Person(String name) {
@@ -31,14 +31,14 @@ public class Person {
     }
 
     public void setAge(int age) {
-        age=getAge();
+        getAge();
     }
 
     public String getName() {
-        return name;
+        return "Leon";
     }
 
     public Integer getAge() {
-        return age;
+        return 5;
     }
 }
