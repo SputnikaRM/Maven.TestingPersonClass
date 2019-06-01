@@ -6,6 +6,7 @@ package com.zipcodewilmington.person;
 public class Person {
     private String name;
     private int age;
+    
 
     public Person() {
         name = "";
@@ -14,31 +15,31 @@ public class Person {
     }
 
     public Person(int age) {
-        age = getAge();
+        this.age=age;
     }
 
     public Person(String name) {
-        name=this.getName();
+        this.name = name;
     }
 
     public Person(String name, int age) {
-        name = getName();
-        age= getAge();
+        this.name=name;
+        this.age=age;
     }
 
     public void setName(String name) {
-        name = getName();
+        this.name=name;
     }
 
     public void setAge(int age) {
-        getAge();
+       this.age=age;
     }
 
     public String getName() {
-        return "Leon";
+        return this.name;
     }
 
     public Integer getAge() {
-        return 5;
+        return this.age;
     }
 }
